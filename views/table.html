@@ -1,0 +1,60 @@
+<div class="row align-center" id="resumen" style="display: none;" ng-controller="tableController as table">
+  <div class="small-10 columns">
+    <div class="table-scroll">
+      <table ng-controller="tableController as table">
+        <thead>
+          <tr>
+            <th align="center">Tasa del mes</th>
+            <th align="center">Intereses</th>
+            <th align="center">Total sin CM</th>
+            <th align="center">Total con CM</th>
+            <th align="center">Porcentaje adicional con CM</th>
+            <th align="center">Porcentaje adicional sin CM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="row in table.resume track by $index">
+            <td align="center">{{row.ir1 | currency:"%":2}}</td>
+            <td align="center">{{row.ir2 | currency:"$":0}}</td>
+            <td align="center">{{row.ir3 | currency:"$":0}}</td>
+            <td align="center">{{row.ir4 | currency:"$":0}}</td>
+            <td align="center">{{row.ir5 | currency:"%":2}}</td>
+            <td align="center">{{row.ir6 | currency:"%":2}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="row align-center" id="dataTable" style="display: none;">
+  <div class="small-10 columns">
+    <div class="table-scroll">
+      <table ng-controller="tableController as table">
+        <thead>
+          <tr>
+            <th align="center">Cuota</th>
+            <th align="center">Inicial</th>
+            <th align="center">Interes</th>
+            <th align="center">Capital</th>
+            <th align="center">Total cuota</th>
+            <th align="center">Saldo</th>
+            <th align="center">Cuota manejo</th>
+            <th align="center">Cuota final</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="row in table.data track by $index">
+            <td align="center">{{row.cuota}}</td>
+            <td align="center">{{row.inicial | currency:"$":0}}</td>
+            <td align="center">{{row.interes | currency:"$":0}}</td>
+            <td align="center">{{row.capital | currency:"$":0}}</td>
+            <td align="center">{{row.totalCuota | currency:"$":0}}</td>
+            <td align="center">{{row.saldo | currency:"$":0}}</td>
+            <td align="center">{{row.cuotaManejo | currency:"$":0}}</td>
+            <td align="center">{{row.cuotaFinal | currency:"$":0}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

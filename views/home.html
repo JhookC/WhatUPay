@@ -1,0 +1,53 @@
+<div class="" ng-controller="tableController as table">
+  <div class="row align-center">
+    <div class="small-10 columns">
+      <label>Valor de la compra
+        <div class="input-group">
+          <span class="input-group-label">$</span>
+          <input class="input-group-field" type="number" ng-model="table.vpres">
+        </div>
+      </label>
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="small-10 columns">
+      <label>Descuento
+        <div class="input-group">
+          <span class="input-group-label">%</span>
+          <input class="input-group-field" type="number" ng-model="table.desc">
+        </div>
+      </label>
+      <p class="help-text" id="passwordHelpText">Ingrese el el porcentaje de descuento en decimal.</p>
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="small-10 columns">
+      <label>Cuotas</label>
+    </div>
+    <div class="small-7 columns">
+      <div class="slider" data-slider data-initial-start="1" data-end="36" data-step="1">
+        <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderCuotas"></span>
+        <span class="slider-fill" data-slider-fill></span>
+      </div>
+    </div>
+    <div class="small-3 columns">
+      <input type="number" id="sliderCuotas" ng-model="table.pmes">
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="small-10 columns">
+      <select name="tarjetas" ng-model="table.ccSelected">
+        <option ng-repeat="cc in table.creditcards" value="{{cc._id}}">{{cc.name}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="small-8 columns button" ng-click="table.calcular()">
+      Calcular
+    </div>
+  </div>
+</div>
+
+<script>
+  $('[data-slider]').foundation();
+</script>

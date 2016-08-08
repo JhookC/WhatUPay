@@ -1,0 +1,130 @@
+[
+  {
+	  "_id": 1,
+      "name": "American Express Blue",
+      "bank": "Bancolombia",
+	  "cuota": 21000,
+	  "freq": 1,
+      "tea": 31.68
+  },
+  {
+    "_id": 2,
+      "name": "American Express Green",
+      "bank": "Bancolombia",
+	  "cuota": 24900,
+	  "freq": 1,
+      "tea": 31.53
+  },
+  {
+    "_id": 3,
+      "name": "American Express Gold",
+      "bank": "Bancolombia",
+	  "cuota": 26600,
+	  "freq": 1,
+      "tea": 31.53
+  },
+  {
+    "_id": 4,
+      "name": "American Express Platinum",
+      "bank": "Bancolombia",
+	  "cuota": 34700,
+	  "freq": 1,
+      "tea": 31.53
+  },
+  {
+    "_id": 5,
+      "name": "MasterCard Ideal",
+      "bank": "Bancolombia",
+	  "cuota": 11500,
+	  "freq": 1,
+      "tea": 31.84
+  },
+  {
+    "_id": 6,
+      "name": "MasterCard Clásica",
+      "bank": "Bancolombia",
+	  "cuota": 19000,
+	  "freq": 1,
+      "tea": 31.68
+  },
+  {
+    "_id": 7,
+      "name": "MasterCard Joven",
+      "bank": "Bancolombia",
+	  "cuota": 9000,
+	  "freq": 1,
+      "tea": 31.84
+  },
+  {
+    "_id": 8,
+      "name": "MasterCard Oro",
+      "bank": "Bancolombia",
+	  "cuota": 22600,
+	  "freq": 1,
+      "tea": 31.53
+  },
+  {
+    "_id": 9,
+      "name": "MasterCard Black",
+      "bank": "Bancolombia",
+	  "cuota": 33500,
+	  "freq": 1,
+      "tea": 31.53
+  },
+  {
+    "_id": 10,
+      "name": "MasterCard Platinum",
+      "bank": "Bancolombia",
+	  "cuota": 26100,
+	  "freq": 1,
+      "tea": 31.53
+  },
+  {
+    "_id": 11,
+      "name": "MasterCard E-Card",
+      "bank": "Bancolombia",
+	  "cuota": 3500,
+	  "freq": 1,
+      "tea": 31.68
+  },
+  {
+    "_id": 12,
+      "name": "Visa Clásica",
+      "bank": "Bancolombia",
+	  "cuota": 19000,
+	  "freq": 1,
+      "tea": 31.68
+  },
+  {
+    "_id": 13,
+      "name": "Visa Infinite",
+      "bank": "Bancolombia",
+	  "cuota": 35000,
+	  "freq": 1,
+      "tea": 31.53
+  },
+  {
+    "_id": 14,
+      "name": "Visa Oro",
+      "bank": "Bancolombia",
+	  "cuota": 22600,
+	  "freq": 1,
+      "tea": 31.53
+  },
+  {
+    "_id": 15,
+      "name": "Visa Platinum",
+      "bank": "Bancolombia",
+	  "cuota": 26100,
+	  "freq": 1,
+      "tea": 31.53
+  },
+  {
+    "_id": 16,
+      "name": "Visa Selección Colombia",
+      "bank": "Bancolombia",
+	  "cuota": 12990,
+	  "freq": 1,
+      "tea": 31.68
+  }
+]
