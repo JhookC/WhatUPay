@@ -17,24 +17,24 @@ $(document).foundation();
   });*/
 
   app.controller("mainController", function(){
-    this.message = "Product page";
   });
 
   app.controller("tableController", function(){
-    this.ccSelected = 0;
     this.vpres   = 0;
     this.desc    = 0;
     this.pmes    = 1;
+    this.tea    = 0;
+    this.cuoManejo = 0;
+    this.perCuoMa = 0;
     this.data    = tabla;
     this.resume  =  resume;
-    this.creditcards = creditcards;
     this.calcular = function(){
       valorPrestamo   = this.vpres;
       descuento       = this.desc;
       plazoMeses      = this.pmes;
-      tasaEA          = Number(creditcards[this.ccSelected - 1].tea);
-      cuotaManejo     = Number(creditcards[this.ccSelected - 1].cuota);
-      periocidadCuota = Number(creditcards[this.ccSelected - 1].freq);
+      tasaEA          = Number(this.tea);
+      cuotaManejo     = Number(this.cuoManejo);
+      periocidadCuota = Number(this.perCuoMa);
       calcularTablaPagos();
       calcularResumen();
 

@@ -129,7 +129,7 @@ function calcularCargoAdicionalPorcentual(tipo) {
 }
 
 //-------------------------------------------------------------------------------
-function loadJSON(file, callback) {
+/*function loadJSON(file, callback) {
 
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -151,11 +151,9 @@ function load() {
         var actual_JSON = JSON.parse(response);
         creditcards = actual_JSON;
     });
-
-
 }
 
-load();
+load();*/
 
 /*console.log(calcularTablaPagos());
 console.log("Tasa mensual: " + (tasaMes*100).toFixed(3));
